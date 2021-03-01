@@ -1,0 +1,74 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  font-family: 'Nerko One', cursive;
+  background-color: #ADD8E6 ;
+}
+
+
+header{
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
+}
+
+.cards{
+  width: 70%;
+  margin: auto;
+  
+}
+
+.card-element{
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  height: 300px;
+  margin: 1%;
+  padding: 20px 20px 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-image: url(../img/pattern.png);
+  background-size: contain;
+  cursor: pointer;
+}
+
+
+
+.figure {
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
+.card-element:hover .figure,
+.card-element:active .figure,
+.card-element:focus .figure{
+  display: block;
+}
+
+
+
+.figure img{
+  width: 100%;
+}
+
+
+.special img{
+  width: 100%;
+}
+
+.special h3{
+  text-align: center;
+}
